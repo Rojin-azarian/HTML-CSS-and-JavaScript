@@ -4,56 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Responsive Layout</title>
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  .section {
-    float: left;
-    width: 33.33%;
-    padding: 20px;
-    box-sizing: border-box;
-    border: 1px solid black;
-    margin-bottom: 20px;
-  }
-  .section-title {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #ffcc00; /* Yellow */
-    color: black;
-    padding: 5px 10px;
-    border: 1px solid black;
-  }
-  @media only screen and (max-width: 991px) {
-    .section {
-      width: 50%;
-    }
-    .section:nth-child(3) {
-      width: 100%;
-      clear: both;
-    }
-  }
-  @media only screen and (max-width: 767px) {
-    .section {
-      width: 100%;
-    }
-  }
-</style>
 </head>
 <body>
-  <div class="section" style="background-color: #ff9999;"> <!-- Pink -->
-    <h2 class="section-title">Chicken</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum mi nec risus sodales, vel posuere nisl ultrices.</p>
-  </div>
-  <div class="section" style="background-color: #99ccff;"> <!-- Blue -->
-    <h2 class="section-title">Beef</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum mi nec risus sodales, vel posuere nisl ultrices.</p>
-  </div>
-  <div class="section" style="background-color: #99ff99;"> <!-- Green -->
-    <h2 class="section-title">Sushi</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum mi nec risus sodales, vel posuere nisl ultrices.</p>
-  </div>
+  <table cellspacing="0" cellpadding="0" border="0" style="width:100%;">
+    <tr>
+      <td style="width: 33.33%; border: 1px solid black; padding: 20px; position: relative;">
+        <h2 style="position: absolute; top: 10px; right: 10px; background-color: #ffcc00; color: black; padding: 5px 10px; border: 1px solid black;">Chicken</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum mi nec risus sodales, vel posuere nisl ultrices.</p>
+      </td>
+      <td style="width: 33.33%; border: 1px solid black; padding: 20px; position: relative;">
+        <h2 style="position: absolute; top: 10px; right: 10px; background-color: #ffcc00; color: black; padding: 5px 10px; border: 1px solid black;">Beef</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum mi nec risus sodales, vel posuere nisl ultrices.</p>
+      </td>
+      <td style="width: 33.33%; border: 1px solid black; padding: 20px; position: relative;">
+        <h2 style="position: absolute; top: 10px; right: 10px; background-color: #ffcc00; color: black; padding: 5px 10px; border: 1px solid black;">Sushi</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum mi nec risus sodales, vel posuere nisl ultrices.</p>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
