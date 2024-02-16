@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Assignment</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .tall-section {
+      height: 1000px; /* Adjust height as needed */
+      background-color: #f2f2f2; /* Distinguishable background color */
+    }
+    .dropdown-menu {
+      width: 100vw; /* Take up entire width of the browser window */
+      background-color: #ffffff; /* Background color for dropdown menu */
+    }
+  </style>
 </head>
 <body>
 
@@ -12,20 +22,11 @@
   <a class="navbar-brand" href="#">Food, LLC</a>
   <!-- For desktop and tablet views, hide all other buttons -->
   <div class="collapse navbar-collapse">
-    <ul class="navbar-nav ml-auto">
-      <!-- No other buttons for desktop and tablet views -->
-    </ul>
-  </div>
-  <!-- For mobile view, create a menu button -->
-  <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
-      <!-- Mobile dropdown menu -->
-      <li class="nav-item dropdown d-md-none">
+    <ul class="navbar-nav ml-auto d-md-none">
+      <!-- Mobile menu button -->
+      <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Menu
+          <span class="navbar-toggler-icon"></span>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Chicken</a>
@@ -40,13 +41,6 @@
 <!-- Page Heading -->
 <div class="container text-center">
   <h1 class="mt-5">Our Menu</h1>
-</div>
-
-<!-- Mobile menu content -->
-<div class="container d-md-none bg-warning p-4">
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.</p>
-  <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.</p>
-  <p>Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.</p>
 </div>
 
 <!-- Tall Section with Bootstrap Grid -->
